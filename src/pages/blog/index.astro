@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostList from '../../components/PostList.astro';
+import { getPublishedPosts } from '../../lib';
+
+const posts = await getPublishedPosts();
+---
+<BaseLayout title="المقالات" description="كل مقالات دليل الذكاء الاصطناعي: شروحات وأدوات وأفكار مشاريع.">
+  <h1>المقالات</h1>
+  <PostList posts={posts} />
+</BaseLayout>

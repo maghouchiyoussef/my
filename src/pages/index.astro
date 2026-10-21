@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostList from '../components/PostList.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getPublishedPosts } from '../lib';
+
+const posts = (await getPublishedPosts()).slice(0, 6);
+---
+<BaseLayout>
+  <section class="hero">
+    <h1>{SITE_TITLE}</h1>
+    <p>{SITE_DESCRIPTION}</p>
+  </section>
+  <h2>أحدث المقالات</h2>
+  <PostList posts={posts} />
+  <p><a href="/blog/">كل المقالات ←</a></p>
+</BaseLayout>
