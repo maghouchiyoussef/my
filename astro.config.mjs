@@ -2,8 +2,8 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 
-// غيّر هذا الرابط إلى دومينك بعد شرائه (مثلاً https://dalilai.com)
+// رابط الموقع الرسمي (مثلاً https://dalilai.com)
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://dalilai.com',
   integrations: [sitemap()],
 });

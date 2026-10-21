@@ -31,8 +31,8 @@ draft: false   # اجعلها true لإخفاء المقال حتى تنتهي �
 | الملف | الوظيفة |
 |---|---|
 | `src/consts.ts` | اسم الموقع ووصفه |
-| `astro.config.mjs` | ضع دومينك هنا مكان `example.com` |
-| `public/robots.txt` | غيّر `example.com` إلى دومينك أيضاً |
+| `astro.config.mjs` | رابط الموقع (`dalilai.com`) |
+| `public/robots.txt` | ملف توجيه محركات البحث |
 | `src/styles/global.css` | الألوان والخطوط |
 | `netlify.toml` | إعدادات النشر على Netlify |
 
